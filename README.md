@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Backlog Buddy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The perfect companion for all your games still sitting on the shelf or collecting virtual dust in your library.
+The aim of this website is to have a searchable list of games for users to add to their personal backlog. Users
+can make this list public to be visible to other users who make accounts and login. Users can then go to other
+users' list and "upvote" games that they think are worth checking out next.
 
-In the project directory, you can run:
+For reference, a "backlog" of games refers to a growing number of games someone has purchased, usually from a sale, that
+the haven't gotten around to playing yet. Steam users know the pain!
 
-### `yarn start`
+## Wireframes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+https://www.figma.com/file/uOLmzRz9bW8ngpSyb48oUi/Untitled?node-id=0%3A1
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+## User Stories
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. The user arrives at the landing page with a description about the site, as well as options to log in or sign up.
+2. The sign up and login screens are both seperate screen which when logged in, will take users to the main dashboard.
+3. The site will remember the user and take them to the dashboard upon entering the site as well.
+4. The main dashboard contains a search bar which will pull from a huge list of games. A persisting nav bar is also present with relevant links.
+5. After searching a game, the search bar will filter the search and pop out a list of games relevant to their search.
+6. These specific games will have 'favorite' buttons by them which will add it to the users' backlog list.
+7. Below this search bar and list area is another area where you can see a list of other users' backlog lists.
+8. When I click on these lists I am taken to that users page where I can see their full list of games they've added.
+9. Besides each game is an "upvote" icon to click to "recommend" that game to the user. A user can upvote a single, couple, or even all games if they wish.
+10. At a glance, this allows the user in question to see which games most of their peers recommends.
+11. On your own personal page, the view is similar. Things displayed on a user page besides the games are a name, a profile picture, as well as games that you've played that are similar to games you're looking for.
+12. There is a seperate tab for users to make posts about certain games they played that they either want to recommend or just talk about.
+13. The user will have the option to make a post about a certain game when they pull it up in the search bar, which will take them to a posting area where they can see, create, and delete posts.
 
-### `yarn build`
+## Routes Inventory
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Database ERD
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Frontend components tree
 
-### `yarn eject`
+## MVP Checklist
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- login/logout,sign-up functionality
+- screen switching between login, dashboard, forum, and profile using links
+- search bar initialization and attached to database
+- keeping running list of saved games on profile screen
+- full CRUD on the forum area
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Stretch Goals
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- all the functionality of liking posts and recommending games on other users' pages
+- in hand with first goal, allowing you to view other users lists on the dashboard and make your list public or private
+- full bio update options like profile pics and games that are similar to what you're looking for
+- comments area for each post
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
